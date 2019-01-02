@@ -1,0 +1,6 @@
+#gpslpm_srv as domain
+type gpslpm_srv, domain, domain_deprecated, mlstrustedsubject;
+type gpslpm_srv_exec, exec_type, file_type;
+init_daemon_domain(gpslpm_srv)
+
+allow gpslpm_srv gps_device:chr_file rw_file_perms;

@@ -1,7 +1,10 @@
 ###################################
 # Dev nodes
 #
-/dev/umts_.* u:object_r:at_device:s0
+/dev/umts_.*         u:object_r:at_device:s0
+/dev/cmsockdev[0-9]+ u:object_r:gps_device:s0
+/dev/crmdev[0-9]     u:object_r:gps_device:s0
+/dev/tzdd            u:object_r:tz_device:s0
 
 ###################################
 # Dev block nodes
