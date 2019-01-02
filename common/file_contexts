@@ -1,0 +1,39 @@
+###################################
+# Dev nodes
+#
+/dev/umts_.* u:object_r:at_device:s0
+
+###################################
+# Dev block nodes
+#
+/dev/block/bootdevice/by-name/MODEM u:object_r:modem_efs_partition_device:s0
+/dev/block/zram0                    u:object_r:swap_block_device:s0
+
+###################################
+# Dev socket nodes
+#
+#/dev/socket/xx u:object_r:xx_socket:s0
+
+###################################
+# System files
+#
+
+###################################
+# sysfs files
+#
+
+###################################
+# data files
+#
+
+###################################
+# persist files
+#
+
+###################################
+# etc files
+#
+
+###################################
+# cache files
+#
