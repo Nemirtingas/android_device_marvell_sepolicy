@@ -3,3 +3,13 @@ type mwirelessd, domain, domain_deprecated, mlstrustedsubject;
 type mwirelessd_exec, exec_type, file_type;
 init_daemon_domain(mwirelessd)
 
+allow mwirelessd bluetooth_efs_file:dir search;
+allow mwirelessd bluetooth_efs_file:file { getattr open read };
+allow mwirelessd property_socket:sock_file write;
+allow mwirelessd self:capability { setgid setuid };
+allow mwirelessd shell_exec:file { execute execute_no_trans getattr open read };
+allow mwirelessd sysfs:file write;
+allow mwirelessd system_data_file:dir { add_name remove_name write };
+allow mwirelessd system_data_file:sock_file { create setattr unlink };
+allow mwirelessd wifi_efs_file:dir search;
+allow mwirelessd wifi_efs_file:file { getattr open read };
