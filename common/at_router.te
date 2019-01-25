@@ -1,0 +1,5 @@
+#at_router as domain
+type at_router, domain, domain_deprecated, mlstrustedsubject;
+type at_router_exec, exec_type, file_type;
+init_daemon_domain(at_router)
+

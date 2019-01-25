@@ -1,4 +1,4 @@
-#at_distributor as domain
+#mwirelessd as domain
 type mwirelessd, domain, domain_deprecated, mlstrustedsubject;
 type mwirelessd_exec, exec_type, file_type;
 init_daemon_domain(mwirelessd)
